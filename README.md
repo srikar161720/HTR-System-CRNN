@@ -1,6 +1,6 @@
 # A Comparitive study of CRNN Architectures for Offline Handwritten Text Recognition
 
-> CSC 8851 Final Project (GSU | Spring 2025)
+> CSC 8851 Final Project (GSU | Spring 2025)    
 > Ana Costa and Srikar Pottabathula
 
 ### Setup
