@@ -33,5 +33,5 @@ We have also provided two test images (`test_01.jpg` and `test_02.jpg`) that we 
 > **Avoid executing those statements as it is unnecessary if the IPYNB file is being executed in a local IDE and all the relevant files are locally available in the appropriate folders.**
 > Ensure to make the necessary omissions from the `Import Statements` code block and update all the directory paths in the IPYNB file before executing it.
 
-**The model should now be ready to be executed block by block as an IPYNB file.**    
+**The model should now be ready to execute block by block as an IPYNB file.**    
 If any issues arise while executing the IPYNB file or the model does not function as intended, please contact me (Srikar Pottabathula) at [spottabathula1@student.gsu.edu], and I can assist.
