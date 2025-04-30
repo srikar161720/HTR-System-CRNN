@@ -26,6 +26,6 @@ DO NOT attempt to load `dummy_model_03.keras` because the model will not work. E
 
 > NOTE: Since this entire project was built in Google Colab, Google Drive provides an easy solution to import files from a user's account. The `Import Statements` code block in the IPYNB file contains code that prompts the program to connect to a Google Drive account and access the user's Google Drive file system. Executing those statements is unnecessary if your data files and model files are locally available in the appropriate folders. Ensure to make the necessary omissions from the `Import Statements` code block and update all the directory paths in the IPYNB file before executing it.
 
-Ensure all the data files and model files are present in the appropriate folders, and all the directory paths are updated in the IPYNB file to match your project directory before execution.
+Ensure all the data files and model files are present in the appropriate folders, and all the directory paths are updated in the IPYNB file to match your project directory before execution. Execute all code blocks (except `Custom Training loop with CTC loss` code block) if trying to use the `model_03.keras` model to predict text.
 
 The model should now be ready to be executed block by block as an IPYNB file.
