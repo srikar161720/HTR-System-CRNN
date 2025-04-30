@@ -4,9 +4,9 @@
 > Ana Costa and Srikar Pottabathula
 
 ### Setup
-In order to execute the IPYNB file, the IAM_TrOCR Dataset must be downloaded from the following Kaggle link:    
+In order to train the model in the IPYNB file, the IAM_TrOCR Dataset must be downloaded from the following Kaggle link:    
 [https://www.kaggle.com/datasets/changheonkim/iam-trocr](https://www.kaggle.com/datasets/changheonkim/iam-trocr)    
-Once the data has been downloaded, place the data in the appropriate folders as illustrated in this file tree:
+Once the data has been downloaded, place the images and text file in the appropriate folders as illustrated in this file tree:
 ```
 |--- HTR_final_project.ipynb
 |--- gt_test.txt
@@ -23,7 +23,7 @@ Unfortunately, GitHub does not allow direct file uploads larger than 25 MB, and 
 [https://drive.google.com/file/d/1-5aiZPJKj4bV80HvOe640Q3jXF5uhsd-/view?usp=sharing](https://drive.google.com/file/d/1-5aiZPJKj4bV80HvOe640Q3jXF5uhsd-/view?usp=sharing)    
 Currently, there is a blank version of `model_03.keras` called `dummy_model_03.keras`, which is acting as an example/placeholder inside the `saved_base_models` folder since empty directories cannot exist in GitHub repositories.    
 **DO NOT** attempt to load `dummy_model_03.keras` because the model will not work. Ensure to download `model_03.keras` from the above Google Drive link and place it in the `saved_base_models` folder in the project directory before attempting to load a model.    
-> To avoid `undefined` variable errors, execute all of the code blocks (except the `Custom Training loop with CTC loss` code block) if trying to use the `model_03.keras` model to predict text.
+> To avoid `undefined` variable errors, execute all of the code blocks (except the `Custom Training loop with CTC loss` code block) if trying to use the `model_03.keras` model to predict text. Importing the training data is necessary in order to compute the variable `max_W` in the `Computing image height and max width` code block, as it is used while predicting text with the model. If choosing **not** to load the training data to avoid executing the `Computing image height and max width` code block, please define and initialize the variable as `max_W = 4348`, since the maximum width out of all the images is `4348`, and continue execution of the remaining code blocks.
 
 **Ensure all the data files and model files are present in the appropriate folders, and all the directory paths are updated in the IPYNB file to match your project directory before execution.**    
 
